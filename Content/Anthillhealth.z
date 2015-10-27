@@ -1,0 +1,26 @@
+class Anthillhealth : ZilchComponent
+{
+    var Health : Real = 20.0;
+    function Initialize(init : CogInitializer)
+    {
+        //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStart);
+    }
+
+    function OnCollisionStart(event : CollisionEvent)
+    {
+    var otherObject = event.OtherObject;
+    if (this.Owner.Name == "anthill")
+    {
+    Console.WriteLine("collision");
+    if(otherObject.ArchetypeName == "ball")
+    {
+        this.Health -=1;
+        if(this.Health ==0.0)
+        {
+            this.Owner.Destroy();
+        }
+    }
+}
+}
+}

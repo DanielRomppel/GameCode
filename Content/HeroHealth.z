@@ -1,0 +1,26 @@
+class HeroHealth : ZilchComponent
+{
+    var Health : Real = 5.0;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStart);
+        
+    }
+
+    function OnCollisionStart(event : CollisionEvent)
+    {
+    var otherObject = event.OtherObject;
+    if (this.Owner.Name == "Hero")
+    {
+    Console.WriteLine("collision");
+    if(otherObject.ArchetypeName == "fireant")
+    {
+        this.Health -=1;
+        if(this.Health ==0.0)
+        {
+            this.Space.ReloadLevel();
+        }
+    }
+}
+}
+}

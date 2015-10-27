@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "kitty pool",
+		uint64 ResourceId = 560541ae43b54a76,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 2443,
+		uint FrameSizeY = 2273,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 1221,
+		float OriginY = 1136,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

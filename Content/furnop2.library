@@ -1,0 +1,7 @@
+ContentLibrary = 
+{
+	string Name = "furnop2",
+	uint64 LibraryId = 561525a6fb5cf1e6,
+	string SourceControlType = "",
+	bool ReadOnly = false,
+},

@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "hero facing right",
+		uint64 ResourceId = 5632e6d060e0f3b5,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 238,
+		uint FrameSizeY = 250,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 119,
+		float OriginY = 125,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

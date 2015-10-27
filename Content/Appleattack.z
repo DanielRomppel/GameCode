@@ -1,0 +1,46 @@
+class Appleattack : ZilchComponent
+{
+    function ChaseTarget(event: UpdateEvent)
+    {
+        this.Owner.Sprite.Color = this.ChaseColor;
+        this.Owner.Transform.Translation += this.ChaseDirection * event.Dt * this.ChaseSpeed;
+    }
+    [Property]
+    var TargetObject: CogPath = null;
+    [Property]
+    var ChaseSpeed: Real = 5.0;
+    var ChaseTriggerDistance: Real = 100.0;
+    var DistanceFromTarget: Real = 0.0;
+    var ChaseDirection: Real3 = Real3();
+    var ChaseColor:Real4 = Real4(1.0, 0.0, 0.0, 1.0);
+    var TargetIsWithinRange: Boolean = true;
+    
+    var OriginalColor: Real4 = Real4();
+    
+    [Dependency]
+    var Transform: Transform = null;
+    [Dependency]
+    var Sprite: Sprite = null;
+    
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+    this.TargetIsWithinRange = true;
+    
+    if (this.TargetObject.Cog != null)
+    {
+        this.CalculateChaseDirectionAndDistance();
+        this.TargetIsWithinRange = (this.DistanceFromTarget <= this.ChaseTriggerDistance);
+        }
+    }
+        function CalculateChaseDirectionAndDistance()
+        {
+            this.ChaseDirection = this.TargetObject.Cog.Transform.Translation - this.Owner.Transform.Translation;
+            this.DistanceFromTarget = Math.Length(this.ChaseDirection);
+            this.ChaseDirection = Math.Normalize(this.ChaseDirection);
+    }
+}

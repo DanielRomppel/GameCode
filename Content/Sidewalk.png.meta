@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Sidewalk",
+		uint64 ResourceId = 56041e22b87bd22f,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 3059,
+		uint FrameSizeY = 504,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 1529,
+		float OriginY = 252,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

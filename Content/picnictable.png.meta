@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "picnictable",
+		uint64 ResourceId = 560836cf061703f7,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 930,
+		uint FrameSizeY = 404,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 465,
+		float OriginY = 202,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

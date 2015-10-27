@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "picnictable",
+		uint64 ResourceId = 5608307cb0f0a553,
+	},
+},

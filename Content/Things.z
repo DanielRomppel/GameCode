@@ -1,0 +1,49 @@
+class Things : ZilchComponent
+{
+    var Direction : Real3 = Real3(0,0,0);
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(Zero.Keyboard, Events.KeyDown, this.OnKeyDown);
+    }
+
+    function OnKeyDown(event : KeyboardEvent)
+    {
+        if(Zero.Keyboard.KeyIsPressed(Keys.Left))
+        {
+            this.Direction = Real3(-15,0,0);
+            var spawnPosition = this.Owner.Transform.Translation;
+            var archetypeToSpawn = Archetype.Find("ball");
+            var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+            createdBullet.RigidBody.Velocity = this.Direction;
+            this.Owner.Sprite.SpriteSource = SpriteSource.Find("hero facing left");
+            
+        }
+        if(Zero.Keyboard.KeyIsPressed(Keys.Right))
+        {
+            this.Direction = Real3(15,0,0);
+            var spawnPosition = this.Owner.Transform.Translation;
+            var archetypeToSpawn = Archetype.Find("ball");
+            var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+            createdBullet.RigidBody.Velocity = this.Direction;
+            this.Owner.Sprite.SpriteSource = SpriteSource.Find("hero facing right");
+        }
+        if(Zero.Keyboard.KeyIsPressed(Keys.Down))
+        {
+            this.Direction = Real3(0,-15,0);
+            var spawnPosition = this.Owner.Transform.Translation;
+            var archetypeToSpawn = Archetype.Find("ball");
+            var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+            createdBullet.RigidBody.Velocity = this.Direction;
+            this.Owner.Sprite.SpriteSource = SpriteSource.Find("hero facing down");
+        }
+        if(Zero.Keyboard.KeyIsPressed(Keys.Up))
+        {
+            this.Direction = Real3(0,15,0);
+            var spawnPosition = this.Owner.Transform.Translation;
+            var archetypeToSpawn = Archetype.Find("ball");
+            var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+            createdBullet.RigidBody.Velocity = this.Direction;
+            this.Owner.Sprite.SpriteSource = SpriteSource.Find("hero2");
+        }
+    }
+    }

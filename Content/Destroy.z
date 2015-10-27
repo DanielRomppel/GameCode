@@ -1,0 +1,26 @@
+class DestroyScript : ZilchComponent
+{
+    var Time : Real = 0;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        this.Time += event.Dt;
+        if(this.Time > 10.0)
+        {
+            this.Owner.Destroy();
+        }
+    }
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if(event.OtherObject.Name != "Hero")
+        {
+            this.Owner.Destroy();
+        }
+    }
+}
+
