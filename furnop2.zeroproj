@@ -6,7 +6,7 @@ Cog =
 		string ProjectOwner = "",
 		string DefaultLevel = "Level",
 		string ProjectSpace = "Space",
-		string ProjectFolder = "C:\Users\16.Daniel.Romppel\Documents\ZeroProjects\furnop2",
+		string ProjectFolder = "C:\Users\16.Daniel.Romppel\Desktop\GitHub\GameCode",
 		uint ProjectEngineRevision = 12259,
 		bool AutoTakeProjectScreenshot = true,
 	},
