@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "break breaky ant",
+		uint64 ResourceId = 5624487005065ff8,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 318,
+		uint FrameSizeY = 347,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 159,
+		float OriginY = 173,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

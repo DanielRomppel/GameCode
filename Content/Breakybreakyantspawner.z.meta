@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "Breakybreakyantspawner",
+		uint64 ResourceId = 56244e8347ece2ea,
+	},
+},
