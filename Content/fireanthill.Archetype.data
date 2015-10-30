@@ -8,9 +8,13 @@ Cog =
 	{
 		string Name = "fireanthill",
 	},
+	Archetyped = 
+	{
+		string Name = "56271d44d7af6dda:fireanthill",
+	},
 	Transform = 
 	{
-		Vec3 Translation = [-200.315842, 48.2483902, 0.999916077],
+		Vec3 Translation = [-200.315842, 48.2483902, 1.99992001],
 		Vec3 Scale = [8.60324383, 11.0202532, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -50,9 +54,6 @@ Cog =
 	FireantSpawner = 
 	{
 	},
-	Anthillhealth = 
-	{
-	},
 	BoxCollider = 
 	{
 		bool Ghost = false,
@@ -62,6 +63,9 @@ Cog =
 		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
 		Vec3 Offset = [0, 0, 0],
 		Vec3 Size = [0.25, 0.125, 0.5],
+	},
+	FireanthillHealth = 
+	{
 	},
 	Hierarchy = 
 	{
