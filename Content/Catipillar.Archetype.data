@@ -6,15 +6,15 @@ Cog =
 	},
 	Named = 
 	{
-		string Name = "breakybreakyant",
+		string Name = "Catipillar",
 	},
 	Archetyped = 
 	{
-		string Name = "56244f88090b2f39:termit",
+		string Name = "562072de48173aea:Catipillar",
 	},
 	Transform = 
 	{
-		Vec3 Translation = [-168.282913, 39.3086739, 5.99991608],
+		Vec3 Translation = [-178.674088, 26.666935, 1.99992001],
 		Vec3 Scale = [0.344364941, 0.385331631, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -28,7 +28,7 @@ Cog =
 		BlendMode BlendMode = Alpha,
 		SpriteGeometryMode GeometryMode = ZPlane,
 		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-		string SpriteSource = "5624487005065ff8:break breaky ant",
+		string SpriteSource = "562072b543f154f6:catipillarboss",
 		bool RenderMask = false,
 		bool FlipX = false,
 		bool FlipY = false,
@@ -41,14 +41,14 @@ Cog =
 		bool Static = false,
 		bool Asleep = false,
 		bool Kinematic = false,
-		bool RotationLocked = false,
+		bool RotationLocked = true,
 		bool Mode2D = true,
 		bool AllowSleep = true,
 		bool Inherit2DMode = true,
 		Vec3 Velocity = [0, 0, 0],
 		Vec3 AngularVelocity = [0, 0, 0],
 	},
-	SphereCollider = 
+	BoxCollider = 
 	{
 		bool Ghost = false,
 		bool SendsMessages = true,
@@ -56,9 +56,9 @@ Cog =
 		string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
 		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
 		Vec3 Offset = [0, 0, 0],
-		float Radius = 1,
+		Vec3 Size = [9, 3.5, 0.5],
 	},
-	Breakybreakyant = 
+	CatipillarMoveMent = 
 	{
 		float PaceSpeed = 5,
 		float MaxMoveDistance = 10,
@@ -77,9 +77,28 @@ Cog =
 			CogPathPreference PathPreference1 = SpaceRelative,
 			CogPathPreference PathPreference2 = Absolute,
 		},
-		float ChaseSpeed = 5,
+		float ChaseSpeed = 1,
 	},
-	Breakybreakyanthealth = 
+	Catipillar = 
 	{
+	},
+	Appleattack = 
+	{
+		CogPath TargetObject = 
+		{
+			string Path = ":/apple",
+			bool ErrorOnResolveToNull = false,
+			bool ErrorOnPathCantCompute = false,
+			bool ErrorOnDirectLinkFail = false,
+			bool UpdateCogOnPathChange = true,
+			bool UpdatePathOnCogChange = true,
+			bool UpdateCogOnInitialize = true,
+			bool ResolvedNullErrorOccurred = false,
+			uint ResolvedCog = 4294967293,
+			CogPathPreference PathPreference0 = CogRelative,
+			CogPathPreference PathPreference1 = SpaceRelative,
+			CogPathPreference PathPreference2 = Absolute,
+		},
+		float ChaseSpeed = 5,
 	},
 },

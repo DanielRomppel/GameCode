@@ -16,11 +16,18 @@ class Picnictable : ZilchComponent
     if(otherObject.ArchetypeName == "ant")
     {
         this.Health -=1;
-        if(this.Health ==0.0)
-        {
-            this.Owner.Destroy();
-        }
     }
+    Console.WriteLine("Picnic table is under attack");
+    if(otherObject.ArchetypeName == "Catipillar")
+    {
+            Console.WriteLine("Catipillar attack, should die");
+        this.Health = 0;
+    }
+    if(this.Health ==0.0)
+    {
+        this.Owner.Destroy();
+    }
+
 }
 }
 }

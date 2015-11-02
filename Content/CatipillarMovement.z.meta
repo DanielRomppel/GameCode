@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "CatipillarMovement",
+		uint64 ResourceId = 5620724f68c218b3,
+	},
+},

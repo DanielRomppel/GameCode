@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "catipillarboss",
+		uint64 ResourceId = 562072b543f154f6,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 1389,
+		uint FrameSizeY = 914,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 694,
+		float OriginY = 457,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

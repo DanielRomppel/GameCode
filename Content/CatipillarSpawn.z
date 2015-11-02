@@ -1,0 +1,24 @@
+class CatipillarSpawn : ZilchComponent
+{
+    var Time : Real = 0;
+    var Firstshot : Real = 0;
+    var Lastshot : Real = 10;
+    var Delay : Boolean = false;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        
+    }
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        this.Time += event.Dt;
+        if(this.Time > 120.0)
+    {
+        var spawnPosition = this.Owner.Transform.Translation;
+        var archetypeToSpawn = Archetype.Find("Catipillar");
+        var createdant = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+        this.Time = -1;
+    }
+}
+}
+
