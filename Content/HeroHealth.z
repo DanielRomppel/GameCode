@@ -12,7 +12,7 @@ class HeroHealth : ZilchComponent
     var otherObject = event.OtherObject;
     if (this.Owner.Name == "Hero")
     {
-    Console.WriteLine("collision");
+    Console.WriteLine("scrub got hit");
     if(otherObject.ArchetypeName == "fireant")
     {
         this.Health -=1;

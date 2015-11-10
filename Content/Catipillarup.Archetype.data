@@ -6,16 +6,12 @@ Cog =
 	},
 	Named = 
 	{
-		string Name = "Catipillar",
-	},
-	Archetyped = 
-	{
-		string Name = "562072de48173aea:Catipillar",
+		string Name = "Catipillarup",
 	},
 	Transform = 
 	{
-		Vec3 Translation = [-157.309296, 34.3882217, 1.99991608],
-		Vec3 Scale = [0.344364941, 0.385331631, 1],
+		Vec3 Translation = [-181.920944, 1.82154274, 1.99991608],
+		Vec3 Scale = [0.344364941, 0.262822568, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
 	Sprite = 
@@ -28,7 +24,7 @@ Cog =
 		BlendMode BlendMode = Alpha,
 		SpriteGeometryMode GeometryMode = ZPlane,
 		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-		string SpriteSource = "562072b543f154f6:catipillarboss",
+		string SpriteSource = "5655cea3319ac437:catipillarboss^",
 		bool RenderMask = false,
 		bool FlipX = false,
 		bool FlipY = false,

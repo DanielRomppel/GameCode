@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "CatipillarUPspawn",
+		uint64 ResourceId = 5655cef7380364e2,
+	},
+},
