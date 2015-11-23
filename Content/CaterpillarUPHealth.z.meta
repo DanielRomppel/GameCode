@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "CaterpillarUPHealth",
+		uint64 ResourceId = 565df2efcc8b27c9,
+	},
+},

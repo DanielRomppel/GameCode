@@ -33,9 +33,24 @@ class Ant : ZilchComponent
     {
         Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
         this.StartPosition = this.Owner.Transform.Translation;
-        this.OriginalColor = this.Owner.Sprite.Color;
+    
+    var randNumGen=new Random(); 
+    var randNum=randNumGen. DieRoll(20);
+    Console.WriteLine (randNum);
+   
+    if (randNum==20)
+    {
+         Console.WriteLine(".");
     }
-
+    else if (randNum >= 10)
+    {
+        Console.WriteLine(".");
+    }   
+    if (randNum <= 10)
+    {
+        Console.WriteLine(".");
+    }
+}
     function OnLogicUpdate(event : UpdateEvent)
     {
     this.TargetIsWithinRange = true;
@@ -78,5 +93,6 @@ class Ant : ZilchComponent
             this.ChaseDirection = this.TargetObject.Cog.Transform.Translation - this.Owner.Transform.Translation;
             this.DistanceFromTarget = Math.Length(this.ChaseDirection);
             this.ChaseDirection = Math.Normalize(this.ChaseDirection);
-    }
+        }
+    
 }

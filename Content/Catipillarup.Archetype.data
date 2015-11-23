@@ -8,9 +8,13 @@ Cog =
 	{
 		string Name = "Catipillarup",
 	},
+	Archetyped = 
+	{
+		string Name = "5655ce2055aab296:Catipillarup",
+	},
 	Transform = 
 	{
-		Vec3 Translation = [-181.920944, 1.82154274, 1.99991608],
+		Vec3 Translation = [0, 0, 0],
 		Vec3 Scale = [0.344364941, 0.262822568, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -38,7 +42,7 @@ Cog =
 		bool Asleep = false,
 		bool Kinematic = false,
 		bool RotationLocked = true,
-		bool Mode2D = true,
+		bool Mode2D = false,
 		bool AllowSleep = true,
 		bool Inherit2DMode = true,
 		Vec3 Velocity = [0, 0, 0],
@@ -68,15 +72,12 @@ Cog =
 			bool UpdatePathOnCogChange = true,
 			bool UpdateCogOnInitialize = true,
 			bool ResolvedNullErrorOccurred = false,
-			uint ResolvedCog = 2,
+			uint ResolvedCog = 4294967293,
 			CogPathPreference PathPreference0 = CogRelative,
 			CogPathPreference PathPreference1 = SpaceRelative,
 			CogPathPreference PathPreference2 = Absolute,
 		},
 		float ChaseSpeed = 1,
-	},
-	Catipillar = 
-	{
 	},
 	Appleattack = 
 	{
@@ -98,6 +99,9 @@ Cog =
 		float ChaseSpeed = 5,
 	},
 	Caterpillar = 
+	{
+	},
+	CaterpillarUPHealth = 
 	{
 	},
 },

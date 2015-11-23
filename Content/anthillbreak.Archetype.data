@@ -10,11 +10,11 @@ Cog =
 	},
 	Archetyped = 
 	{
-		string Name = "56271d6edf980c2f:anthill",
+		string Name = "5658b30c5417434f:anthillbreak",
 	},
 	Transform = 
 	{
-		Vec3 Translation = [-198.694443, -0.514610291, 1.99992001],
+		Vec3 Translation = [-133.610001, 48.6619263, 1.99992001],
 		Vec3 Scale = [8.60324383, 11.0202532, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -63,6 +63,9 @@ Cog =
 		bool Inherit2DMode = true,
 		Vec3 Velocity = [0, 0, 0],
 		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	Breakybreakyantspawner = 
+	{
 	},
 	Hierarchy = 
 	{

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "Breakspawner",
+		uint64 ResourceId = 5658b3435b4b4860,
+	},
+},
