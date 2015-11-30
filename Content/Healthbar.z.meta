@@ -2,7 +2,7 @@ TextContent =
 {
 	ZilchScriptBuilder = 
 	{
-		string Name = "Haelthbar",
+		string Name = "Healthbar",
 		uint64 ResourceId = 5644aa70d578f585,
 	},
 },

@@ -12,7 +12,6 @@ class AntHealth : ZilchComponent
     var otherObject = event.OtherObject;
     if (this.Owner.Name == "ant")
     {
-    Console.WriteLine("collision");
     if(otherObject.ArchetypeName == "ball")
     {
         this.Health -=1;

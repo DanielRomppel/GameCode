@@ -1,0 +1,35 @@
+class Healthbar : ZilchComponent
+{
+        [Property]
+    var Health : Real = 5.0;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    
+    {
+        this.Health = this.Space.FindObjectByName("Hero").HeroHealth.Health;
+        if(this.Health == 5)
+        {
+            this.Owner.Sprite.SpriteSource = SpriteSource.Find("Health5");
+        }
+        if(this.Health == 4)
+        {
+            this.Owner.Sprite.SpriteSource = SpriteSource.Find("Health4");
+        }
+        if(this.Health == 3)
+        {
+            this.Owner.Sprite.SpriteSource = SpriteSource.Find("Health3");
+        }
+        if(this.Health == 2)
+        {
+            this.Owner.Sprite.SpriteSource = SpriteSource.Find("Health2");
+        }
+        if(this.Health == 1)
+        {
+            this.Owner.Sprite.SpriteSource = SpriteSource.Find("Health1");
+        }
+    }
+    }
